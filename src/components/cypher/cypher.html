@@ -1,0 +1,18 @@
+<ion-card [id]="'cypher' + cypher.id">
+
+    <ion-card-header>
+      <div class="cypher-title">
+        <img [src]="'assets/img/' + cypher.typeName() + '.png'"/>
+        <strong>{{ cypher.name }}</strong>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content *ngIf="selected" class="cypher-content">
+      <p><strong>Nivel: </strong>{{cypher.level}}</p>
+      <p *ngIf="cypher.internal"><strong>Interno: </strong>{{cypher.internal}}</p>
+      <p *ngIf="cypher.wearable"><strong>Llevable: </strong>{{cypher.wearable}}</p>
+      <p *ngIf="cypher.usable"><strong>Utilizable: </strong>{{cypher.usable}}</p>
+      <p><strong>Efecto: </strong>{{cypher.description}}</p>
+    </ion-card-content>
+
+  </ion-card>

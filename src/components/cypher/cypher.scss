@@ -1,0 +1,14 @@
+cypher {
+  .cypher-title {
+    display: inline-block;
+  }
+  .cypher-title img {
+    display: inline;
+    vertical-align: middle;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .cypher-title strong {
+    vertical-align: middle;
+  }
+}
